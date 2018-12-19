@@ -3,8 +3,8 @@ module.exports = {
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: '小程序学习手册',
-            description: 'Vue 驱动的静态站点生成工具'
+            title: '网站工程 - 专业高级',
+            description: '教学讲义及概览'
         }
     },
     head: [
@@ -31,14 +31,13 @@ module.exports = {
                 editLinkText: '编辑此页',
                 lastUpdated: '上次更新',
                 nav: [{
-                        text: '指南',
-                        link: '/guide/',
-                    },
-                    {
                         text: 'nodejs',
                         link: '/nodejs/'
                     },
                     {
+                        text: 'vuejs',
+                        link: '/vuejs/'
+                    }, {
                         text: 'react',
                         link: '/react/'
                     },
@@ -51,13 +50,14 @@ module.exports = {
                         link: '/redux/'
                     },
                     {
-                        text: '小程序',
+                        text: 'wechat',
                         link: '/miniProgram/'
                     },
                 ],
                 sidebar: {
                     '/guide/': genSidebarConfig('指南'),
                     '/nodejs/': nodejsSidebarConfig('nodejs'),
+                    '/vuejs/': vuejsSidebarConfig('vuejs'),
                     '/react/': reactSidebarConfig('react'),
                     '/redux/': reduxSidebarConfig('redux'),
                     '/wepy/': wepySidebarConfig('wepy'),
@@ -66,6 +66,17 @@ module.exports = {
             }
         }
     }
+}
+
+function vuejsSidebarConfig(title) {
+    return [{
+        title,
+        collapsable: false,
+        children: [
+            "",
+            "install"
+        ]
+    }]
 }
 
 function reactSidebarConfig(title) {
