@@ -7,6 +7,10 @@ jsx是 javascript and xml 的简写
 
 **json 写法比xml简单，类似与js的对象，以键值对的形式保存**
 
+## 特性
+- 设计jsx时被优化过了，性能较好
+- 类型安全，在编译过程就可以发现错误
+- 语法比较简洁，可以在js中写html
 
 ## 意义
 我们之前创建一个template模板
@@ -20,6 +24,16 @@ jsx 应用而生。
 		"<h1>"+result+"</h1>"+
 	"</div>";
 
+	//
+	var result = ["吃饭饭","睡觉觉","打豆豆"];
+	var temp = "<div>"+
+		"<ul>"+
+			result.forEach(item=>{
+				"<li>这是："+item+"</li>"
+			})
+		"</ul>"+
+	"</div>";
+
 	//es6 字符串模板
 	var result = "hello template";
 	var temp = `<div>
@@ -27,7 +41,7 @@ jsx 应用而生。
 	</div>`
 ```
 ## 基本语法
-```js
+```jsx
 	//这种看起来可能有些奇怪的标签语法既不是字符串也不是 HTML。
 	const element = <h1>Hello, world!</h1>;
 ```
@@ -48,6 +62,7 @@ jsx 应用而生。
 
 webpack.config.js
 ```js
+	
 	module.exports= {
 		module: {
 	        rules: [{

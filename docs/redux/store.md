@@ -7,10 +7,11 @@
 ## 什么时候使用
     - 有参数或者数据需要被多个页面共享的时候
 ## 基础 
+- 提供 createStore() 方法创建一个仓库；
 - 提供 getState() 方法获取 state；
 - 提供 dispatch(action) 方法更新 state；
 - 通过 subscribe(listener) 注册监听器;
-- 通过 subscribe(listener) 返回的函数注销监听器。
+- 通过 unsubscribe(listener) 返回的函数注销监听器。
 
 **再次强调一下 Redux 应用只有一个单一的 store。**
 

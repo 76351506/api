@@ -18,3 +18,8 @@
 	npm run start
 	npm run eject
 ```
+
+# 起步
+
+##  CDN
+内容分发网络，解决网络拥挤提升网络效率。

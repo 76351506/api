@@ -89,7 +89,10 @@ function reactSidebarConfig(title) {
             "jsx",
             "component",
             "router",
-            "communicate"
+            "communicate",
+            "dom",
+            "lifecycle",
+            "validate",
 
         ]
     }]
@@ -103,7 +106,8 @@ function nodejsSidebarConfig(title) {
             "",
             "package",
             "install",
-            "middleware",
+            "npm",
+            "middleware"
         ]
     }]
 }
