@@ -15,6 +15,7 @@
 <h2 align="center">主要链接</h2>
 
 * 首页链接：https://docschina.org
+** 首页的二级目录
 * git 仓库：https://github.com/docschina
 * 群聊：https://docschina.org/talk
 * 团队：https://docschina.org/team
