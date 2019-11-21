@@ -21,5 +21,47 @@
 - 添加下图配置
 - [vscode完整配置](/files/vscode.settings.json)
 
-![VScode基础配置](/images/eslint_01.png)
-![VScode](/images/eslint_02.png)
+
+```json
+  {
+    //编辑器字体格式
+    "editor.fontFamily": " 'Courier New'",
+    //字体大小
+    "editor.fontSize": 16,
+    //首行缩进大小
+    "editor.tabSize": 2,
+    //保存自动格式化
+    "editor.formatOnSave": true,
+     //保存时使用eslint规范自动格式化 
+    "eslint.autoFixOnSave": true,
+    //添加对vue格式支持
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+  }
+```
+
+```json
+  {
+    //设置vue默认格式化方式
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    //设置js的引号风格为单引号
+    "javascript.preferences.quoteStyle": "single",
+    "prettier.quoteProps": "preserve",
+    // 使用带引号替代双引号 
+    "prettier.singleQuote": true,
+    "editor.formatOnPaste": true,
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.implicitProjectConfig.checkJs": true,
+    "prettier.requireConfig": true,
+    //代码结尾不添加分号
+    "prettier.semi": false,
+  }
+```
