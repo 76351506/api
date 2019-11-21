@@ -74,7 +74,8 @@ function vuejsSidebarConfig(title) {
         collapsable: false,
         children: [
             "",
-            "install"
+            "install",
+            "eslint"
         ]
     }]
 }
