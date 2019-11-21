@@ -3,8 +3,8 @@ module.exports = {
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: '网站工程 - 专业高级',
-            description: '教学讲义及概览'
+            title: '小前端',
+            description: '前端相关知识总结,有不正确的地方,还请各位大佬多多指正。'
         }
     },
     head: [
@@ -55,7 +55,6 @@ module.exports = {
                     },
                 ],
                 sidebar: {
-                    '/guide/': genSidebarConfig('指南'),
                     '/nodejs/': nodejsSidebarConfig('nodejs'),
                     '/vuejs/': vuejsSidebarConfig('vuejs'),
                     '/react/': reactSidebarConfig('react'),
